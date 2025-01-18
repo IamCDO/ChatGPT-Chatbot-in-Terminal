@@ -7,7 +7,8 @@ cur = con.cursor()
 con.execute('CREATE TABLE IF NOT EXISTS chat_history(user_query TEXT, gpt_response TEXT, time TEXT, query_id INTEGER)')
 
 endpoint = 'https://api.openai.com/v1/chat/completions'
-token = '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'
+#NOTE: The token used below is a placeholder, you should open a developer account with OpenAI(https://openai.com) in order to get an API key for your self.
+token = 'sk-proj-boTWzYpYN_0k8L6LJJrYTjPAnUMEq4XmsCBI7wF1n0Yd3Jy1J9qa5dS1PZ7lnno9IAAih22FwzU9iNpQTUoIHFqCCyLlSZnUy_eXJLrVTbiyBxvhTwQA'
 header = {'Authorization':f'BEARER {token}'}
 end = ''
         
